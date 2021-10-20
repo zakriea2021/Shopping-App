@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shopping.HomeApp">
+
+    <RelativeLayout
+        android:id="@+id/headerView"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/colorPrimary2" />
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            app:cardBackgroundColor="#630118"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:text="اطلب عن منتجاك من تطبيق ملاك شــوب .."
+                android:textColor="@color/colorPrimaryLight"
+                android:gravity="center_vertical"
+                android:drawablePadding="10dp"
+                app:drawableStartCompat="@drawable/ic_search_primary_light" />
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/headerView"
+        android:layout_marginBottom="50dp"
+        android:background="@android:color/white"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPagerHeader"
+                android:foregroundGravity="center"
+                android:overScrollMode="never"
+                android:clipToPadding="false"
+                android:layout_marginTop="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+            <include android:id="@+id/shimmerMeal"
+                layout="@layout/horizontalscrollview" />
+
+
+
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/nestedscrollview"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/shimmerMeal"
+                android:layout_height="wrap_content"
+                android:fillViewport="true">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:weightSum="3">
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:orientation="vertical"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:padding="5dp"
+                                android:background="@color/orange_50"
+                                android:src="@drawable/restuarant" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="10dp"
+                                android:background="#DFDFDF" />
+
+                            <TextView
+                                android:id="@+id/restaurant_list"
+                                android:layout_width="88dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="  المطاعم     "
+                                android:textAllCaps="true"
+                                android:textColor="#0E0000"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:orientation="vertical"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:padding="5dp"
+                                android:background="@color/lime_300"
+                                android:src="@drawable/shopping" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="10dp"
+                                android:background="#DFDFDF" />
+
+                            <TextView
+                                android:id="@+id/categories_restaurant"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text=" المتاجر"
+                                android:textAllCaps="true"
+                                android:textColor="#0E0000"
+                                android:textSize="11sp"
+                                android:layout_gravity="center"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1">
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:orientation="vertical"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:padding="1dp"
+                                android:src="@drawable/ic_fastfood" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="10dp"/>
+
+                            <TextView
+                                android:id="@+id/prodect"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:text="المنتجات"
+                                android:textAllCaps="true"
+                                android:textColor="#0E0000"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+                        </LinearLayout >
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+            <include
+                android:id="@+id/include2"
+                android:layout_below="@id/nestedscrollview"
+                layout="@layout/horizontalresturants"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginLeft="350dp"
+                android:layout_marginTop="545dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="80dp"
+                app:srcCompat="@drawable/cart_home" />
+
+            <!--      <include
+                      android:id="@+id/include3"
+                      android:layout_below="@id/include2"
+                      layout="@layout/restaurant_list_home"
+                      android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"/> -->
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/shadow_view"/>
+
+        <!--bottom navigation-->
+        <include
+            android:id="@+id/include"
+            layout="@layout/bottom_navigation_view"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

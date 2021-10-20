@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#BF007A</color>
+    <color name="colorPrimaryDark">#C6218A</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="overlay_dark_10">#1A000000</color>
+    <color name="overlay_dark_20">#33000000</color>
+
+    <color name="white">#ffffff</color>
+
+    <color name="yellow_50">#FFFDE7</color>
+    <color name="light_green_700">#689F38</color>
+    <color name="colorPrimary2">#85001F</color>
+    <color name="colorPrimaryLight">#CA7474</color>
+    <color name="pink_900">#880E4F</color>
+    <color name="overlay_dark_80">#CC000000</color>
+    <color name="grey_600">#757575</color>
+    <color name="red_A700">#D50000</color>
+    <color name="deep_orange_50">#FBE9E7</color>
+    <color name="orange_50">#FFF3E0</color>
+    <color name="lime_300">#DCE775</color>
+    <color name="colorPrimaryDark1">#630118</color>
+    <color name="fragrance_title">#4c4c4c</color>
+
+
+</resources>

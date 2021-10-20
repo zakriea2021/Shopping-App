@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buyers.cart.CartFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parent_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+  <!--      <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tv_parent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+
+            <TextView
+                android:id="@+id/total_price_cart"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="Total Price = "
+                android:textAlignment="center"
+                android:textSize="22dp"
+                android:textColor="#fff"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        -->
+
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/seller_nest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/app_bar_seller"
+            android:layout_marginTop="65dp"
+            android:layout_marginBottom="70dp"
+            android:background="@android:color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_cart"
+                    android:layout_width="match_parent"
+                    android:layout_height="575dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/seller_nest">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <TableLayout
+                    android:id="@+id/priceLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_below="@+id/rv_cart"
+                    android:padding="@dimen/activity_horizontal_margin">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_below="@+id/rv_cart"
+                    android:background="#6BE1E4E1">
+
+                    <TextView
+                        android:id="@+id/total_price_cart"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:gravity="center"
+                        android:hint="PRICE"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="  مجموع قيمة الدفع"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+
+                <LinearLayout
+                    android:id="@+id/layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_below="@+id/priceLayout"
+                    android:gravity="center">
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_cartonaline"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/priceLayout"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:paddingTop="1dp"
+                        android:text="  عملية الدفع / اونـلاين "
+                        android:textColor="#FFF"
+                        android:textSize="15dp" />
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_cart"
+                        android:layout_width="170dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/priceLayout"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:onClick="paymentClick"
+                        android:paddingTop="1dp"
+                        android:text="  عملية الدفع / كــاش نـقدا "
+                        android:textColor="#FFF"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+
+                <!--
+
+         <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_below="@+id/layout"
+            android:gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_cart1"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/priceLayout"
+                android:background="@color/colorPrimary"
+                android:text="     عملية الدفع / كــاش نـقدا "
+                android:onClick="paymentClick"
+                android:textColor="#FFF"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="1dp"
+                android:layout_centerHorizontal="true" />
+
+
+
+        </LinearLayout>
+        -->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:weightSum="3">
+
+
+                    <Button
+                        android:id="@+id/listen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/price_total_textView"
+                        android:layout_weight="1"
+                        android:background="#ea7a66"
+                        android:onClick="confirm"
+                        android:text="إستماع"
+                        android:textColor="#fff" />
+
+                    <Button
+                        android:id="@+id/call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/price_total_textView"
+                        android:layout_toRightOf="@id/listen"
+                        android:layout_weight="1"
+                        android:background="#3a8fc1"
+                        android:onClick="call"
+                        android:text="إتصال"
+                        android:textColor="#fff" />
+
+                    <Button
+                        android:id="@+id/sms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/price_total_textView"
+                        android:layout_weight="1"
+                        android:background="#ea7a66"
+                        android:onClick="sms"
+                        android:text="SMS رسائل"
+                        android:textColor="#fff" />
+
+                </LinearLayout>
+
+             </TableLayout>
+            </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>

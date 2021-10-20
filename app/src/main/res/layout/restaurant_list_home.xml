@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view1"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageview1"
+                    android:layout_width="70dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/alamen" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageview1">
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/rate"
+                        android:layout_marginLeft="10dp"/>
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/rate"
+                        android:layout_marginLeft="5dp"/>
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/rate"
+                        android:layout_marginLeft="5dp"/>
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/rate"
+                        android:layout_marginLeft="5dp"/>
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/rate"
+                        android:layout_marginLeft="5dp"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name_restaurant1"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_margin="10dp"
+                    android:paddingTop="15dp"
+                    android:text=" مطعم الامين   "
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/desc_even1"
+                    android:layout_margin="1dp"
+                    android:text="  255 تقييم   7.4 "
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/down1"
+                    android:layout_margin="0dp"
+                    android:text="الحد الادنى"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/monny1"
+                    android:layout_margin="0dp"
+                    android:text="1000 ريال "
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/desc_re1"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="35dp"
+                    android:text="مفتوح "
+                    android:textSize="21dp"
+                    android:gravity="center"
+                    android:textColor="@color/yellow_50"
+                    android:background="@color/light_green_700"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/time1"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="15dp"
+                    android:text="زمن الوصول"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/minutes1"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="5dp"
+                    android:text="50 دقيقة"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view2"
+        android:layout_margin="5dp"
+        android:layout_below="@id/card_view1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageview2"
+                    android:layout_width="70dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/alkalt"/>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_below="@id/imageview2">
+
+
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/rate"
+                        android:layout_marginLeft="5dp"/>
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/rate"
+                        android:layout_marginLeft="5dp"/>
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/rate"
+                        android:layout_marginLeft="5dp"/>
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/rate"
+                        android:layout_marginLeft="5dp"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name_restaurant2"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_margin="10dp"
+                    android:paddingTop="15dp"
+                    android:text=" مطعم الخالد   "
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/desc_even2"
+                    android:layout_margin="1dp"
+                    android:text="  255 تقييم  7.4 "
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/down2"
+                    android:layout_margin="0dp"
+                    android:text="الحد الادنى"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/monny2"
+                    android:layout_margin="0dp"
+                    android:text="1000 ريال "
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/desc_re2"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="35dp"
+                    android:text="مفتوح "
+                    android:textSize="21dp"
+                    android:gravity="center"
+                    android:textColor="@color/yellow_50"
+                    android:background="@color/light_green_700"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/time2"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="15dp"
+                    android:text="زمن الوصول"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/minutes2"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="5dp"
+                    android:text="50 دقيقة"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view3"
+            android:layout_margin="5dp"
+            android:layout_below="@id/card_view1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageview3"
+                        android:layout_width="70dp"
+                        android:layout_height="140dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/alshark" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_below="@id/imageview3">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/rate"
+                            android:layout_marginLeft="5dp"/>
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/rate"
+                            android:layout_marginLeft="5dp"/>
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/rate"
+                            android:layout_marginLeft="5dp"/>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name_restaurant4"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_margin="10dp"
+                        android:paddingTop="15dp"
+                        android:text=" مطعم الشرق   "
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                        android:id="@+id/desc_even4"
+                        android:layout_margin="1dp"
+                        android:text="  255 تقييم   7.4 "
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/down4"
+                        android:layout_margin="0dp"
+                        android:text="الحد الادنى"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/monny4"
+                        android:layout_margin="0dp"
+                        android:text="1000 ريال "
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/desc_re4"
+                        android:layout_marginLeft="75dp"
+                        android:layout_marginTop="35dp"
+                        android:text="مفتوح "
+                        android:textSize="21dp"
+                        android:gravity="center"
+                        android:textColor="@color/yellow_50"
+                        android:background="@color/light_green_700"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/time4"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="15dp"
+                        android:text="زمن الوصول"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/minutes4"
+                        android:layout_marginLeft="75dp"
+                        android:layout_marginTop="5dp"
+                        android:text="50 دقيقة"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view4"
+            android:layout_margin="5dp"
+            android:layout_below="@id/card_view1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageview4"
+                        android:layout_width="70dp"
+                        android:layout_height="140dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/restuarant" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_below="@id/imageview4">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/rate"
+                            android:layout_marginLeft="5dp"/>
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/rate"
+                            android:layout_marginLeft="5dp"/>
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/rate"
+                            android:layout_marginLeft="5dp"/>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name_restaurant3"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_margin="10dp"
+                        android:paddingTop="15dp"
+                        android:text="مطعم الشيباني"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                        android:id="@+id/desc_even3"
+                        android:layout_margin="1dp"
+                        android:text="  255 تقييم   7.4 "
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/down3"
+                        android:layout_margin="0dp"
+                        android:text="الحد الادنى"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/monny3"
+                        android:layout_margin="0dp"
+                        android:text="1000 ريال "
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/desc_re3"
+                        android:layout_marginLeft="75dp"
+                        android:layout_marginTop="35dp"
+                        android:text="مفتوح "
+                        android:textSize="21dp"
+                        android:gravity="center"
+                        android:textColor="@color/yellow_50"
+                        android:background="@color/light_green_700"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/time3"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="15dp"
+                        android:text="زمن الوصول"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/minutes3"
+                        android:layout_marginLeft="75dp"
+                        android:layout_marginTop="5dp"
+                        android:text="50 دقيقة"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

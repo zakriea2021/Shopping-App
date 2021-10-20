@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Shopping</string>
+    <string name="text_main_login"> <u>Already Have an Account? Login</u></string>
+    <string name="text_main_become_seller"> <u> Want to Become a Seller? </u></string>
+    <string name="text_seller_login"> <u>Already Have an Account?</u></string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">الإعدادات</string>
+    <string name="action_search">إبحث عن المنتج</string>
+
+    <string name="menu_cart">سلة الشراء</string>
+    <string name="menu_favorit">المفضلة</string>
+    <string name="menu_resturants">فيـئة المطاعم</string>
+    <string name="menu_shopping">فيـئة المتاجر</string>
+    <string name="menu_location">الموقع_تتبع الطلب</string>
+    <string name="menu_order">Order</string>
+    <string name="menu_categories">Categories</string>
+    <string name="menu_setting">Settings</string>
+    <string name="menu_logout">Logout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_seller_home">MainActivity</string>
+    <string name="title_home">الرئيسية</string>
+    <string name="title_add">إضافة</string>
+    <string name="title_logout">تسجيل خروج</string>
+    <string name="seller">Seller</string>
+    <string name="or">OR</string>
+    <string name="buyer">Buyer</string>
+    <string name="you_are">You are</string>
+    <string name="todo">TODO</string>
+
+    <!--Menu-->
+    <string name="menu_home">الرئيسية</string>
+    <string name="menu_discover">الموقع</string>
+    <string name="menu_favorite">المفضلة</string>
+    <string name="menu_profile">حسابك</string>
+
+    <!-- String resources related to menus -->
+    <string name="settings_title">Settings</string>
+    <string name="notifications_title">Notifications</string>
+
+
+    <string name="fragrance_name">Fragrance Name</string>
+    <string name="quantity">الكـمـية</string>
+    <string name="price">الـسعـر: </string>
+
+</resources>

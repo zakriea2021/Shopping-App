@@ -1,0 +1,23 @@
+<merge xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavViewBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:outlineSpotShadowColor="@color/white"
+            app:menu="@menu/menu_home"
+            app:itemIconTint="#FA554F"
+            tools:ignore="UnusedAttribute" />
+
+    </RelativeLayout>
+
+</merge>
